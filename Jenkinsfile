@@ -4,7 +4,8 @@ pipeline {
     //     gitParameter branchFilter: 'origin/(.*)', defaultValue: 'origin/develop', name: 'BRANCH', type: 'PT_BRANCH', sortMode: 'ASCENDING_SMART', quickFilteringEnabled: true
     // }
     environment{
-        GIT_URL = "ssh://git@github.com:imadoor/spring-angular.git"
+        //GIT_URL = "ssh://git@github.com:imadoor/spring-angular.git"
+        GIT_URL = "https://github.com/imadoor/spring-angular.git"
         SERVER_DIR = "rest-server"
         UI_DIR = "angular-client"
     }
