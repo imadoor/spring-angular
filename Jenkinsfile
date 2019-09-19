@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     parameters {
         gitParameter branchFilter: 'origin/(.*)', defaultValue: 'origin/develop', name: 'BRANCH', type: 'PT_BRANCH', sortMode: 'ASCENDING_SMART', quickFilterEnabled: true
     }
