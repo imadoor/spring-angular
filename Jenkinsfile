@@ -1,7 +1,7 @@
 pipeline {
     agent none
     parameters {
-        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'origin/develop', name: 'BRANCH', type: 'PT_BRANCH', sortMode: 'ASCENDING_SMART', quickFilteringEnabled: true
+        gitParameter branchFilter: 'origin/(.*)', defaultValue: 'origin/develop', name: 'BRANCH', type: 'PT_BRANCH', sortMode: 'ASCENDING_SMART', quickFilterEnabled: true
     }
     environment{
         GIT_URL = "ssh://git@github.com:imadoor/spring-angular.git"
