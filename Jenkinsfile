@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('SCM Checkout'){
             steps{
-                git branch: "${params.BRANCH}", url: "${GIT_URL}"
+                git branch: "develop", url: "${GIT_URL}"
                 sh "echo 'Environment Variables'"
                 sh "printenv | sort"
             }
